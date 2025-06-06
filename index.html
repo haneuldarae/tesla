@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테슬라 위기 분석 대시보드</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>테슬라 위기 분석 대시보드</h1>
+                <p class="subtitle">머스크-트럼프 갈등과 주가 급락</p>
+                <p class="update-date">2025년 6월 7일 기준</p>
+            </div>
+            
+            <div class="key-metrics">
+                <div class="metric-card negative">
+                    <div class="metric-value">-14.26%</div>
+                    <div class="metric-label">주가 하락률</div>
+                </div>
+                <div class="metric-card negative">
+                    <div class="metric-value">$152B</div>
+                    <div class="metric-label">시가총액 손실</div>
+                </div>
+                <div class="metric-card negative">
+                    <div class="metric-value">-41%</div>
+                    <div class="metric-label">연초대비 하락률</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stock Price Section -->
+        <section class="stock-section">
+            <h2>주가 분석</h2>
+            <div class="stock-content">
+                <div class="stock-chart">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1749226545/pplx_code_interpreter/c371dccd_pprvqz.jpg" alt="테슬라 주가 차트" />
+                    <p class="chart-caption">테슬라 주가 급락: 2025년 6월 6일 역사상 최대 14.26% 하락</p>
+                </div>
+                
+                <div class="technical-levels">
+                    <h3>기술적 분석 주요 레벨</h3>
+                    <div class="levels-table">
+                        <div class="level-row header">
+                            <div>구분</div>
+                            <div>가격</div>
+                            <div>의미</div>
+                        </div>
+                        <div class="level-row support">
+                            <div>핵심 지지선</div>
+                            <div>$274</div>
+                            <div>역사적 수요대, 채널 지지선</div>
+                        </div>
+                        <div class="level-row resistance">
+                            <div>즉시 저항선</div>
+                            <div>$300</div>
+                            <div>심리적 저항, 핵심 피벗</div>
+                        </div>
+                        <div class="level-row support">
+                            <div>다음 지지선</div>
+                            <div>$260</div>
+                            <div>4월 초 구 저항선</div>
+                        </div>
+                        <div class="level-row target">
+                            <div>회복 목표</div>
+                            <div>$311</div>
+                            <div>이전 저항선, 차익실현대</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <h2>갈등 전개 타임라인</h2>
+            <div class="timeline-container">
+                <div class="timeline-item low-impact">
+                    <div class="timeline-time">11:20 AM ET</div>
+                    <div class="timeline-content">
+                        <div class="timeline-event">머스크, 트럼프의 과거 적자 관련 트윗 재게시</div>
+                        <div class="timeline-platform">X/Twitter</div>
+                    </div>
+                    <div class="impact-badge low">Low</div>
+                </div>
+                
+                <div class="timeline-item high-impact">
+                    <div class="timeline-time">12:00 PM ET</div>
+                    <div class="timeline-content">
+                        <div class="timeline-event">트럼프, 백악관에서 머스크 비판</div>
+                        <div class="timeline-platform">White House Press</div>
+                    </div>
+                    <div class="impact-badge high">High</div>
+                </div>
+                
+                <div class="timeline-item high-impact">
+                    <div class="timeline-time">12:25 PM ET</div>
+                    <div class="timeline-content">
+                        <div class="timeline-event">머스크 반박: "법안을 본 적이 없다"</div>
+                        <div class="timeline-platform">X/Twitter</div>
+                    </div>
+                    <div class="impact-badge high">High</div>
+                </div>
+                
+                <div class="timeline-item very-high-impact">
+                    <div class="timeline-time">12:46 PM ET</div>
+                    <div class="timeline-content">
+                        <div class="timeline-event">머스크: "나 없었으면 트럼프 졌을 것"</div>
+                        <div class="timeline-platform">X/Twitter</div>
+                    </div>
+                    <div class="impact-badge very-high">Very High</div>
+                </div>
+                
+                <div class="timeline-item critical-impact">
+                    <div class="timeline-time">Market Close</div>
+                    <div class="timeline-content">
+                        <div class="timeline-event">테슬라 주가 14.26% 급락</div>
+                        <div class="timeline-platform">NASDAQ</div>
+                    </div>
+                    <div class="impact-badge critical">Critical</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Performance Section -->
+        <section class="financial-section">
+            <h2>재무 성과 분석</h2>
+            <div class="financial-content">
+                <div class="quarter-comparison">
+                    <h3>Q1 2025 vs Q1 2024 비교</h3>
+                    <div class="comparison-cards">
+                        <div class="comparison-card">
+                            <div class="metric-name">매출</div>
+                            <div class="metric-values">
+                                <div class="current">$193.4B</div>
+                                <div class="previous">$213.0B</div>
+                            </div>
+                            <div class="change negative">-9.2%</div>
+                        </div>
+                        
+                        <div class="comparison-card">
+                            <div class="metric-name">순이익</div>
+                            <div class="metric-values">
+                                <div class="current">$409M</div>
+                                <div class="previous">$1,390M</div>
+                            </div>
+                            <div class="change negative">-70.6%</div>
+                        </div>
+                        
+                        <div class="comparison-card">
+                            <div class="metric-name">주당순이익</div>
+                            <div class="metric-values">
+                                <div class="current">$0.27</div>
+                                <div class="previous">$0.41</div>
+                            </div>
+                            <div class="change negative">-34.1%</div>
+                        </div>
+                        
+                        <div class="comparison-card">
+                            <div class="metric-name">인도량</div>
+                            <div class="metric-values">
+                                <div class="current">336,000</div>
+                                <div class="previous">423,000</div>
+                            </div>
+                            <div class="change negative">-20.6%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="financialChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competition Analysis Section -->
+        <section class="competition-section">
+            <h2>경쟁사 분석</h2>
+            <div class="competition-table">
+                <div class="table-header">
+                    <div>회사</div>
+                    <div>판매량</div>
+                    <div>변화율</div>
+                    <div>지역</div>
+                </div>
+                
+                <div class="table-row tesla">
+                    <div class="company-name">Tesla</div>
+                    <div>2,000</div>
+                    <div class="change negative">-36%</div>
+                    <div>영국</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="company-name">BYD</div>
+                    <div>7,231</div>
+                    <div class="change positive">+45%</div>
+                    <div>유럽</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="company-name">Volkswagen</div>
+                    <div>8,500</div>
+                    <div class="change positive">+25%</div>
+                    <div>유럽</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="company-name">NIO</div>
+                    <div>15,000</div>
+                    <div class="change positive">+48%</div>
+                    <div>중국</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Analysis Section -->
+        <section class="impact-section">
+            <h2>영향 분석 및 전망</h2>
+            <div class="impact-content">
+                <div class="impact-card">
+                    <h3>소비자 심리 영향</h3>
+                    <p>머스크-트럼프 갈등으로 인한 정치적 불확실성이 테슬라 브랜드 이미지에 부정적 영향을 미치고 있습니다. 특히 공화당 지지층의 테슬라 구매 의향이 급격히 감소할 것으로 예상됩니다.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <h3>정치적 백래시 효과</h3>
+                    <p>트럼프와의 갈등은 향후 정책 지원에도 악영향을 미칠 수 있습니다. EV 보조금 삭감 등의 정책 변화가 테슬라 판매에 직접적인 타격을 줄 가능성이 높습니다.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <h3>시장 전망</h3>
+                    <p>단기적으로는 $260-$274 지지선에서의 반등 여부가 관건입니다. 장기적으로는 중국 시장에서의 경쟁 심화와 글로벌 EV 시장 점유율 하락이 주요 리스크 요인으로 작용할 것입니다.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <h3>애널리스트 전망</h3>
+                    <p>월스트리트 애널리스트들은 테슬라의 목표 주가를 평균 15% 하향 조정했으며, 2025년 실적 전망 역시 보수적으로 수정하고 있습니다. 특히 인도량 증가세 둔화가 주요 우려사항으로 지적되고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <p>데이터 출처: NASDAQ, Tesla IR, Bloomberg Terminal, Yahoo Finance</p>
+                <p>면책조항: 본 분석은 정보 제공 목적이며 투자 권유가 아닙니다. 투자 결정 시 전문가와 상담하시기 바랍니다.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
